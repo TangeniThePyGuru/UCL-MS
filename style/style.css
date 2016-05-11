@@ -1,21 +1,20 @@
-nav a {
+/*nav a {
 	display: inline-block;
-	color: white; 
+	color: black; 
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-}
+}*/
 
-nav {
+/*nav {
 	margin-right: -10px;
 	margin-left: -10px;
 	margin-top: -10px;
 	margin-bottom: 60px;
 	overflow: hidden;
-	background-color:  rgba(255, 0, 0, 0.7); 
-    }
+    }*/
 
-nav a:hover { background-color: rgba(255, 255, 0, 0.6);  text-decoration: none;}
+nav a:hover { background-color: gray;  text-decoration: none;}
 
 h1 { text-align: center; color: inherit; font-weight: normal;}
 
@@ -26,3 +25,5 @@ input a:visited { text-decoration: none; }
 input a:hover { text-decoration: underline; }
 
 a { text-decoration: none; }
+
+

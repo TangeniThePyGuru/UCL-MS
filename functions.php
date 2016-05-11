@@ -178,8 +178,7 @@ function get_questions_test($test_id){
 check how many times a student has taken specific test
 */
 function has_taken_test($s_number,$test_id)
-{
-	global $conn;
+{	global $conn;
 	$sql = "select id from marks where srnumber=$s_number and test_id=$test_id";
 	$result = mysqli_query($conn, $sql);
 	$questions = array();
@@ -200,10 +199,8 @@ function save_responses($arr, $test_id)
 	// by bieng returned after the completion of the function
 	$status = 0;
 	$s_number = $_SESSION['username'];
-	//var_dump(has_taken_test(201403156,$test_id));
+	
 	$timesTestTaken = count(has_taken_test($s_number,$test_id));
-	//var_dump($timesTestTaken);
-	//die();
 	if($timesTestTaken <= 1){
 	$questions = get_questions_test($test_id);
 	/*
@@ -219,10 +216,7 @@ function save_responses($arr, $test_id)
 		for($aa=0; $aa < count($questions); $aa++) {
 			if($qid == $questions[$aa]['question_id'] && $aid == $questions[$aa]['answer_id']){
 				$correct++;
-			}else{
-				// answer is incorrect	
-			}
-			
+			}	
 		}
 	}
 	// holds the number of incorrect answers
