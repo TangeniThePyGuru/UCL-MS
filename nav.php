@@ -10,7 +10,7 @@
     <div class="container">  
         <div class="row">   
             <div class="col-xs=12">
-               <div class="well">    
+               <div class="well well-sm" role="navigation">    
                 <ul class="nav nav-tabs nav-justified" >
                     <li><a href="/ucl/staff.php">Home</a></li>
                     <li><a href="/ucl/insert.php">Add Question</a></li> 

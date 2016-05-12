@@ -17,10 +17,10 @@ if ( !is_logged_in() ) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet"href="style/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="style/style.css">
   <script src="js/date_time.js"></script>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/countdown.js"></script>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
   <style>
     nav a { text-decoration-style: none;}
     li { list-style: none; }
@@ -30,9 +30,13 @@ if ( !is_logged_in() ) {
 
 <body onload="winClose();">
 
- <nav>
-  <a href="logout.php"><strong>Logout</strong></a>
-
+ <nav >
+   <div style=" width: 40% !important; margin: auto !important;" class="well">
+   <ul class="nav nav-pills nav-stacked nav-justified"> 
+     <li><a href="instructions.php"><strong>Home</strong></a></li>
+      <li><a href="logout.php"><strong>Logout</strong></a></li>
+   </ul>
+   </div>
 </nav>
 <header>
     <h1 style="color: inherit; font-weight: normal;text-align: center; ">
@@ -53,7 +57,7 @@ if ( !is_logged_in() ) {
   <span id="date_time"></span>
   <script type="text/javascript">window.onload = date_time('date_time');</script>
 
-  <label type="text" id= "timer" >
+  <!--<label type="text" id= "timer" >-->
     <script type="text/javascript">
     timer = new Countdown();
     timer.init();
