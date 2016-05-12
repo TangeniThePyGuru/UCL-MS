@@ -41,7 +41,7 @@ if ( !is_logged_in() ) {
 <header>
     <h1 style="color: inherit; font-weight: normal;text-align: center; ">
       <img src="img/unam-logo.jpg" alt="Unam Logo" style="width: 175px; height: 80px; align="middle"; "><br>
-       Unam Computer Literacy - Marking Scheme
+       Unam Computer Literacy - Marking System
     </h1>
 </header>
 
