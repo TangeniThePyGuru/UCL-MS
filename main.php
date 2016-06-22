@@ -16,11 +16,17 @@ if ( !is_logged_in() ) {
   <title>UCL-MS</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet"href="style/bootstrap.min.css">
+  <!--CSS-->
+  <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  
+  <!--JS-->
   <script src="js/date_time.js"></script>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/countdown.js"></script>
-  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <script type="text/javascript" src="js/bootbox.min.js"></script>
+  
+  
   <style>
     nav a { text-decoration-style: none;}
     li { list-style: none; }
@@ -45,7 +51,7 @@ if ( !is_logged_in() ) {
     </h1>
 </header>
 
-<form action="save.php" method="post"> 
+<form  action="save.php" method="post" onsubmit="return confirm('Do you really wish to submit your work?')" > 
 <div class="container">
   <h2>Take Examination...</h2>
    <input type="text" id="timer">
